@@ -1,28 +1,26 @@
-```{r, eval=FALSE, include=TRUE}
-"Protocolo:
- 
- 1. Daniel Felipe Villa Rengifo
- 
- 2. Lenguaje: R
- 
- 3. Tema: Maquinas de Vector Soporte [Parte 3]
- 
- 4. Fuentes:  
-    https://www.datacamp.com/community/tutorials/support-vector-machines-r"
-```
 
-```{r}
+## ---- eval=FALSE, include=TRUE-------------------------------------------------------
+## "Protocolo:
+## 
+##  1. Daniel Felipe Villa Rengifo
+## 
+##  2. Lenguaje: R
+## 
+##  3. Tema: Maquinas de Vector Soporte [Parte 3]
+## 
+##  4. Fuentes:
+##     https://www.datacamp.com/community/tutorials/support-vector-machines-r"
+
+
+## ------------------------------------------------------------------------------------
 # Guardamos los OUTPUTS:
 sink("OUTPUTS.txt")
 
 # Volvemos a utilizar el .RData para los datos de anteriores Replits:
 #load("~/R/100DaysOfCode/Dia_98_22junio/.RData")
-```
 
 
-# Evaluación del modelo [parte 2]
-
-```{r}
+## ------------------------------------------------------------------------------------
 # Maatriz de Confusión:
 library(e1071)
 library(caret)
@@ -35,13 +33,9 @@ confusionMatrix(predict(modelo_svmP, datosOJ_test), datosOJ_test$Purchase)
 paste("Observaciones de test mal clasificadas:", 
       100 * mean(datosOJ_test$Purchase != predict(modelo_svmP, datosOJ_test)) %>%
         round(digits = 4), "%")
-```
 
-# Kernel radial
 
-## Ajuste del modelo
-
-```{r}
+## ------------------------------------------------------------------------------------
 # Cargamos una semilla
 set.seed(325)
 
@@ -90,4 +84,3 @@ paste("Observaciones de test mal clasificadas:",
            round(digits = 4), "%")
 
 sink()
-```
