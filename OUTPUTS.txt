@@ -1,0 +1,72 @@
+[1] "# Maatriz de Confusión:"
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  CH  MM
+        CH 111  20
+        MM  19  63
+                                          
+               Accuracy : 0.8169          
+                 95% CI : (0.7583, 0.8664)
+    No Information Rate : 0.6103          
+    P-Value [Acc > NIR] : 6.226e-11       
+                                          
+                  Kappa : 0.6142          
+                                          
+ Mcnemar's Test P-Value : 1               
+                                          
+            Sensitivity : 0.8538          
+            Specificity : 0.7590          
+         Pos Pred Value : 0.8473          
+         Neg Pred Value : 0.7683          
+             Prevalence : 0.6103          
+         Detection Rate : 0.5211          
+   Detection Prevalence : 0.6150          
+      Balanced Accuracy : 0.8064          
+                                          
+       'Positive' Class : CH              
+                                          
+[1] "Observaciones de test mal clasificadas: 18.31 %"
+[1] "# Resumen del ajuste del modelo"
+
+Parameter tuning of ‘svm’:
+
+- sampling method: 10-fold cross validation 
+
+- best parameters:
+
+- best performance: 0.1645554 
+
+- Detailed performance results:
+
+null device 
+          1 
+[1] "# Matriz de confusion y métricas en test"
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  CH  MM
+        CH 109  17
+        MM  21  66
+                                          
+               Accuracy : 0.8216          
+                 95% CI : (0.7635, 0.8705)
+    No Information Rate : 0.6103          
+    P-Value [Acc > NIR] : 2.139e-11       
+                                          
+                  Kappa : 0.6282          
+                                          
+ Mcnemar's Test P-Value : 0.6265          
+                                          
+            Sensitivity : 0.8385          
+            Specificity : 0.7952          
+         Pos Pred Value : 0.8651          
+         Neg Pred Value : 0.7586          
+             Prevalence : 0.6103          
+         Detection Rate : 0.5117          
+   Detection Prevalence : 0.5915          
+      Balanced Accuracy : 0.8168          
+                                          
+       'Positive' Class : CH              
+                                          
+[1] "Observaciones de test mal clasificadas: 17.84 %"
